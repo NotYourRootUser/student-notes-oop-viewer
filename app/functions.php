@@ -19,3 +19,14 @@ function buildStudentNoteObjects($rawNotes)
 
     return $noteObjects;
 }
+
+function filterNotesByStatus($noteObjects, $statusFilter)
+{
+    $filteredNotes = [];
+    foreach ($noteObjects as $noteObject) {
+        if ($noteObject->isOpen()) {
+            $filteredNotes[] = $noteObject;
+        }
+    }
+    return $filteredNotes;
+}

@@ -46,3 +46,30 @@ function filterNotesByStudent($noteObjects, $studentName)
     }
     return $filteredStudents;
 }
+
+function countAllNotes($noteObjects) {
+     $notesTotal = count($noteObjects);
+     return $notesTotal;
+}
+
+function countOpenNotes($noteObjects) {
+    $openNotesTotal = 0;
+    foreach ($noteObjects as $noteObject) {
+        if (
+            $noteObject->isOpen()
+            )
+            $openNotesTotal++;
+    }
+    return $openNotesTotal;
+}
+
+function countClosedNotes($noteObjects) {
+    $closedNotesTotal = 0;
+    foreach ($noteObjects as $noteObject) {
+        if (
+            $noteObject->isClosed()
+            )
+            $closedNotesTotal++;
+    }
+    return $closedNotesTotal;
+}

@@ -3,7 +3,7 @@
 require_once "functions.php";
 
 $noteObjects = buildStudentNoteObjects($studentNotes);
-$statusFilter = "open";
+$statusFilter = "closed";
 $filteredNotes = filterNotesByStatus($noteObjects, $statusFilter);
 ?>
 

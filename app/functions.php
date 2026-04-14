@@ -24,7 +24,10 @@ function filterNotesByStatus($noteObjects, $statusFilter)
 {
     $filteredNotes = [];
     foreach ($noteObjects as $noteObject) {
-        if ($noteObject->isOpen()) {
+        if (
+            $noteObject->isOpen() && $statusFilter === "open" ||
+            $noteObject->isClosed() && $statusFilter === "closed"
+        ) {
             $filteredNotes[] = $noteObject;
         }
     }

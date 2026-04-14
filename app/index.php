@@ -16,6 +16,9 @@ $noteObjects = buildStudentNoteObjects($studentNotes);
 </head>
 
 <body>
+    <p><a href="notes-by-status.php">Notes by status</a></p>
+    <p><a href="student-view.php">Student view</a></p>
+    <p><a href="summary.php">Summary page</a></p>
 
     <h1>All Student Notes</h1>
 

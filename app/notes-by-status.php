@@ -17,7 +17,7 @@ $filteredNotes = filterNotesByStatus($noteObjects, $statusFilter);
 </head>
 
 <body>
-    <p><a href="idex.php">All notes</a></p>
+    <p><a href="index.php">All notes</a></p>
 
     <h1>Notes by status</h1>
     <?php

@@ -33,3 +33,16 @@ function filterNotesByStatus($noteObjects, $statusFilter)
     }
     return $filteredNotes;
 }
+
+function filterNotesByStudent($noteObjects, $studentName)
+{
+    $filteredStudents = [];
+    foreach ($noteObjects as $noteObject) {
+        if (
+            $noteObject->matchesStudent($studentName)
+        ) {
+            $filteredStudents[] = $noteObject;
+        }
+    }
+    return $filteredStudents;
+}

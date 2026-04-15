@@ -48,7 +48,6 @@ Displays:
 
 ## Learning Focus
 This project was built to practice:
-
 - classes
 - objects
 - properties
@@ -62,7 +61,8 @@ This project was built to practice:
 - conditionals
 
 ## Project Structure
-~~~text
+
+```text
 student-notes-oop-viewer/
 ├── app/
 │   ├── data.php
@@ -80,7 +80,7 @@ student-notes-oop-viewer/
 ├── screenshots/
 ├── .gitignore
 └── README.md
-~~~
+```
 
 ## Main Concepts Used
 
@@ -131,9 +131,32 @@ A request like `student-view.php?student=Mia` tells PHP to:
 - filter the note objects by student name
 - render only the matching notes
 
+## How to Run
+Run the project locally with PHP's built-in server.
+
+Example:
+
+```bash
+php -S localhost:8000
+```
+
+Then open:
+- `http://localhost:8000/index.php`
+- `http://localhost:8000/notes-by-status.php?status=open`
+- `http://localhost:8000/notes-by-status.php?status=closed`
+- `http://localhost:8000/student-view.php?student=Mia`
+- `http://localhost:8000/summary.php`
+
+## Screenshots
+Project screenshots include:
+- all notes page
+- open notes filter
+- closed notes filter
+- student view filter
+- summary page
+
 ## What I Learned
 This project helped me understand the difference between:
-
 - raw arrays and objects
 - helper functions and object methods
 - array access and object access
@@ -178,4 +201,4 @@ It successfully uses:
 - browser output based on the request
 
 ## Project Status
-Completed first version.
+First version complete.

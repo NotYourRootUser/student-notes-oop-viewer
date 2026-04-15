@@ -3,7 +3,7 @@
 require_once "functions.php";
 
 $noteObjects = buildStudentNoteObjects($studentNotes);
-$totalNotes = countAllNotes($studentNotes);
+$totalNotes = countAllNotes($noteObjects);
 $openNotes = countOpenNotes($noteObjects);
 $closedNotes = countClosedNotes($noteObjects);
 

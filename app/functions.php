@@ -8,13 +8,13 @@ function buildStudentNoteObjects($rawNotes)
     $noteObjects = [];
 
     foreach ($rawNotes as $rawNote) {
-        $rawNote = new StudentNote(
+        $noteObject = new StudentNote(
             $rawNote["student_name"],
             $rawNote["note_text"],
             $rawNote["status"]
         );
 
-        $noteObjects[] = $rawNote;
+        $noteObjects[] = $noteObject;
     }
 
     return $noteObjects;

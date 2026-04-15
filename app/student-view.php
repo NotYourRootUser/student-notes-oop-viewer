@@ -19,7 +19,12 @@ $filteredNotes = filterNotesByStudent($noteObjects, $studentName);
 <body>
     <p><a href="index.php">All notes</a></p>
 
-    <h1>Student view</h1>
+    <h1>Notes by student</h1>
+    <p><a href="student-view.php?student=Mia">Mia</a></p>
+    <p><a href="student-view.php?student=Andy">Andy</a></p>
+    <p><a href="student-view.php?student=Jordan">Jordan</a></p>
+    <p><a href="student-view.php?student=Chloe">Chloe</a></p>
+
     <?php
 
     foreach ($filteredNotes as $filteredNote) { ?>

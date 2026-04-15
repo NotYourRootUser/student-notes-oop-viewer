@@ -6,18 +6,18 @@ Student Notes OOP Viewer
 ## Project Summary
 This project is a small PHP practice app built to strengthen object-oriented programming basics while still reinforcing core PHP fundamentals.
 
-The app will display student notes, allow filtering by status or student name, and show a simple summary view. It will use raw note data, convert that data into objects, and respond differently depending on the request made through the browser URL.
+The app displays student notes, filters them by status or student name, and shows a simple summary view. It uses raw note data, converts that data into objects, and responds differently depending on the request made through the browser URL.
 
 ## Project Goal
 The goal of this project is to move from basic procedural PHP into beginner-level object-oriented PHP.
 
-This project is being built to practice:
+This project practices:
 - classes
 - objects
 - methods
 - request/response using query parameters
 
-It will also reinforce:
+It also reinforces:
 - variables
 - arrays
 - loops
@@ -25,18 +25,18 @@ It will also reinforce:
 - conditionals
 - page rendering in the browser
 
-## Why I Am Building This
+## Why I Built This
 I already built a simpler student notes project using basic PHP concepts such as arrays, loops, functions, and conditional logic.
 
-This project is the next step because it keeps the same domain but introduces object-oriented structure. That makes it easier to focus on new concepts without also having to learn a completely new project idea.
+This project is the next step because it keeps the same domain but introduces object-oriented structure. That made it easier to focus on new concepts without also having to learn a completely new project idea.
 
-It is intended to be a small bridge project between:
+It works as a small bridge project between:
 - beginner procedural PHP
 - beginner OOP in PHP
 - basic request/response thinking
 
-## Planned Features
-This project is planned to include:
+## Built Features
+This project includes:
 
 - a page that shows all student notes
 - a page that filters notes by status
@@ -45,29 +45,32 @@ This project is planned to include:
 - a class that represents a student note
 - helper functions for building and filtering note objects
 
-## Planned Pages
+## Pages
+
 ### 1. All Notes Page
 Shows all notes in the browser.
 
 ### 2. Notes by Status Page
 Filters notes by status using a query parameter in the URL.
 
-Example idea:
-`?status=open`
+Examples:
+- `?status=open`
+- `?status=closed`
 
 ### 3. Student View Page
 Filters notes by student name using a query parameter in the URL.
 
-Example idea:
-`?student=Mia`
+Examples:
+- `?student=Mia`
+- `?student=Andy`
 
 ### 4. Summary Page
-Shows a simple summary such as:
+Shows:
 - total notes
 - open notes
 - closed notes
 
-## Main Concepts This Project Will Practice
+## Main Concepts This Project Uses
 
 ### PHP Fundamentals
 - variables
@@ -87,24 +90,22 @@ Shows a simple summary such as:
 - changing page output based on the request
 - returning filtered content in the browser
 
-## Planned Project Structure
-At a high level, the project will contain:
+## Project Structure
+At a high level, the project contains:
 
 - `app/` for the PHP app files
 - `notes/` for project notes and reflections
 - `screenshots/` for proof-of-work images
 - `README.md` for repo documentation
 
-The app folder is planned to include:
+The app folder includes:
 - raw data
 - the `StudentNote` class
 - helper functions
 - page files for each view
 
-## Planned Scope
-This project is intentionally small.
-
-It is designed to stay focused on OOP and request/response basics.
+## Scope
+This project was intentionally kept small.
 
 Included in scope:
 - raw data in arrays
@@ -123,7 +124,7 @@ Not included in scope:
 - full CRUD behavior
 
 ## Success Criteria
-This project will be successful if I can:
+This project is successful because I can now:
 
 - define a PHP class for student notes
 - create multiple note objects from raw data
@@ -132,10 +133,10 @@ This project will be successful if I can:
 - render different outputs in the browser
 - explain the difference between raw arrays, objects, methods, and helper functions
 
-## Expected Outcome
-By the end of this project, I should have a clearer understanding of how PHP moves from:
+## Outcome
+By the end of this project, I had a clearer understanding of how PHP moves from:
 - plain data
 - to structured objects
 - to browser output based on a request
 
-This project should also give me a clean GitHub artifact that shows progression from PHP basics into beginner OOP.
+This project also gave me a clean GitHub artifact that shows progression from PHP basics into beginner OOP.

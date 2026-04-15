@@ -1,7 +1,7 @@
 # Student Notes OOP Viewer - Setup Log
 
 ## Goal
-Set up and track a small PHP OOP practice project locally before building the main app logic.
+Set up and track a small PHP OOP practice project locally before and during the early build stage.
 
 ## Project Folder
 `student-notes-oop-viewer`
@@ -30,6 +30,7 @@ Set up and track a small PHP OOP practice project locally before building the ma
 - `01-project-overview.md`
 - `02-setup-log.md`
 - `03-what-i-learned.md`
+- `04-build-log.md`
 
 ## Local Setup Steps
 1. Created the project folder and named it `student-notes-oop-viewer`.
@@ -37,29 +38,39 @@ Set up and track a small PHP OOP practice project locally before building the ma
 3. Created the main folder structure for the app, notes, and screenshots.
 4. Created the starting PHP files for the app pages, class file, data file, and helper file.
 5. Added the project overview note to define the scope, learning targets, planned pages, and feature boundaries.
-6. Added this setup log to track the early build process.
+6. Added this setup log to track the environment, file structure, and local run method.
 
-## How I Plan to Run the Project
-The project will be tested locally in the browser using Apache and localhost.
+## How I Ran the Project
+The project was tested locally in the browser using PHP's built-in server.
 
-Planned example paths:
-- `http://localhost/student-notes-oop-viewer/app/`
-- `http://localhost/student-notes-oop-viewer/app/notes-by-status.php?status=open`
-- `http://localhost/student-notes-oop-viewer/app/student-view.php?student=Mia`
-- `http://localhost/student-notes-oop-viewer/app/summary.php`
+Example command:
 
-## What I Have Checked So Far
+~~~bash
+php -S localhost:8000
+~~~
+
+Example paths:
+- `http://localhost:8000/index.php`
+- `http://localhost:8000/notes-by-status.php?status=open`
+- `http://localhost:8000/notes-by-status.php?status=closed`
+- `http://localhost:8000/student-view.php?student=Mia`
+- `http://localhost:8000/student-view.php?student=Andy`
+- `http://localhost:8000/summary.php`
+
+## What I Checked During Setup
 - the project folder exists
 - Git has been initialized
 - the folder structure is in place
 - the main project files exist
-- the planning notes have been created
+- the notes files were created
+- the project can be run locally through localhost
 
-## Small Fixes During Setup
-- no code fixes yet
-- initial focus has been on structure, scope, and documentation
+## Small Setup Fixes
+- corrected folder and file naming for consistency
+- made sure the planned page names matched the project overview
+- confirmed the local run paths for browser testing
 
-## Current Result
-The project structure is ready and the setup phase has been documented.
+## Result
+The project structure and local setup were completed successfully.
 
-The next stage is to build the object model and raw data structure for the app.
+The app was built and tested page by page in the browser.
